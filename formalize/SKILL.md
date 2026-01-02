@@ -8,13 +8,13 @@ allowed-tools: Read, Grep, Glob
 
 Balance is key; Excessive abstraction is NOT formalization.
 
-## What is NOT formalization:
+## What is NOT formalization
 
 - Overusing utilities, factories, helpers, or builder functions is NOT formalization.
 - Adding detailed documentation is NOT formalization.
 - Simply converting code into classes is NOT formalization.
 
-## Evaluation Criteria:
+## Evaluation Criteria
 
 Evaluate the formalization based on the following:
 - Does it improve overall code readability?
@@ -28,7 +28,7 @@ Evaluate the formalization based on the following:
 - Are there any pitfalls that might mislead someone reading the code for the first time?
 - Which parts of the structure are most likely to become fragile or be bypassed in the future?
 
-## Output rules:
+## Output rules
 
 - Focus on the code itself rather than the comments.
 - Iteratively check both the fine details and the overall structure of the code.
