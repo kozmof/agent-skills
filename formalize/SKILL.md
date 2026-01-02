@@ -18,7 +18,7 @@ Balance is key; Excessive abstraction is NOT formalization.
 
 Evaluate the formalization based on the following:
 - Does it improve overall code readability?
-- Are context boundaries and responsibilities well-grained?
+- Are context boundaries and responsibilities fine-grained?
 - Does it improve testability?
 - Does the structure bring regularity to complexity?
 - Are the rules for extension clear?
