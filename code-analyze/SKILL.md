@@ -9,14 +9,14 @@ allowed-tools: Read, Grep, Glob
 ## Code checklist
 
 1. Code organization and structure
-2. Relations of implementations(about types, interfaces)
-3. Relations of implementations(about functions)
+2. Relations of implementations (about types, interfaces)
+3. Relations of implementations (about functions)
 4. Specific contexts and usages
 5. Pitfalls
-6. Improvement points 1(about design overview)
-7. Improvement points 2(about types, interfaces)
-8. Improvement points 3(about implementaions)
-9. Learning paths on implementations(entrises and goals)
+6. Improvement points 1 (about design overview)
+7. Improvement points 2 (about types, interfaces)
+8. Improvement points 3 (about implementaions)
+9. Learning paths on implementations (entrises and goals)
 
 ## Instructions
 
