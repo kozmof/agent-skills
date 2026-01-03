@@ -20,18 +20,18 @@ Evaluate the formalization based on the following:
 - Does it improve overall code readability?
 - Are context boundaries and responsibilities fine-grained?
 - Does it improve testability?
-- Does the structure bring regularity to complexity?
+- Does the modality bring regularity to complexity?
 - Are the rules for extension clear?
 - Are effects on values simple?
 - Is there regularity in data manipulation?
 - Does it maximize language-specific features? (e.g., TypeScript types, Rust pattern matching)
 - Are there any pitfalls that might mislead someone reading the code for the first time?
-- Which parts of the structure are most likely to become fragile or be bypassed in the future?
+- Which parts of the modality are most likely to become fragile or be bypassed in the future?
 
 ## Output rules
 
 - Focus on the code itself rather than the comments.
-- Iteratively check both the fine details and the overall structure of the code.
+- Iteratively check both the fine details and the overall modality of the code.
 - Skip positive feedback.
 - Omit metrics such as priority or 5-star ratings.
 
