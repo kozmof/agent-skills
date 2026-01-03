@@ -13,7 +13,7 @@ Example: Login
 CAN (OK):
 - Users can register their email addresses.
 - Users can log in using a password.
-- The UI displays a notification if the user cannot log in due to an incorrect password.
+- Users can receive a notification if they cannot log in due to an incorrect password.
 - Users can change their passwords.
 
 CAN'T (NG):
