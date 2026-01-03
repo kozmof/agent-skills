@@ -20,7 +20,7 @@ DON'T (NG):
 - Users cannot link multiple accounts to a single email address.
 - Users cannot log in if the password and email address do not match.
 - Users must not be able to identify whether the password or the email address is incorrect.
-- Users can only change their password via the email address linked to their account.
+- Passwords cannot be changed other than through the email address linked to the account
 
 ## Instructions
 
