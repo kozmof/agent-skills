@@ -10,13 +10,13 @@ Balance Spec is a rule where you list what is permitted alongside what is prohib
 
 Example: Login
 
-DO (OK):
+CAN (OK):
 - Users can register their email addresses.
 - Users can log in using a password.
 - The UI displays a notification if the user cannot log in due to an incorrect password.
 - Users can change their passwords.
 
-DON'T (NG):
+CAN'T (NG):
 - Users cannot link multiple accounts to a single email address.
 - Users cannot log in if the password and email address do not match.
 - Users must not be able to identify whether the password or the email address is incorrect.
