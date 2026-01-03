@@ -27,4 +27,4 @@ CAN'T (NG):
 1. Read the target files using Read tool
 2. Search for patterns using Grep
 3. Find related files using Glob
-4. Provide detailed feedback on specification. Where a correlation exists between the 'Do' and 'Don't' items, report on that connection as well.
+4. Provide detailed feedback on specification. Where a correlation exists between the "Can" and "Can't" items, report on that connection as well.
