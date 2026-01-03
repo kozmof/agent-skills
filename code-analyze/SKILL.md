@@ -16,7 +16,7 @@ allowed-tools: Read, Grep, Glob
 6. Improvement points 1 (about design overview)
 7. Improvement points 2 (about types, interfaces)
 8. Improvement points 3 (about implementaions)
-9. Learning paths on implementations (entrises and goals)
+9. Learning paths on implementations (entries and goals)
 
 ## Instructions
 
