@@ -11,7 +11,7 @@ Recursively perform the following tasks to ponder the specifications:
 - Identify overlap of specifications.
 - Identify inconsistency of specifications.
 - Identify any ambiguities or unclear points within those steps.
-- Identify open questions of specifications.
+- Make open questions of specifications.
 - Use AskUserQuestion to clarify any points of uncertainty.
 
 
