@@ -14,4 +14,4 @@ The goal is to uncover the underlying design intent expressed in the code and un
 1. Read the target files using Read tool
 2. Search for patterns using Grep
 3. Find related files using Glob
-4. Provide detailed feedback on design dimentions
+4. Provide detailed feedback on design dimensions
