@@ -9,6 +9,9 @@ Design discovery is fundamentally DIFFERENT from evaluating a codebase to assign
 
 The goal is to uncover the underlying design intent expressed in the code and understand how components interact. Since implementations rarely adhere strictly to textbook design patterns, analyze how and why they deviate to fully grasp their specific design purposes.
 
+## Design Momentum
+Analyze how the momentum of each design can influence future implementations.
+
 ## Instructions
 
 1. Read the target files using Read tool
