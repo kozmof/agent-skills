@@ -1,5 +1,5 @@
 ---
-name: Refine spec
+name: refine-spec
 description: Refine the specifications which a user pointed out
 allowed-tools: Read, Grep, Glob, AskUserQuestion 
 ---

@@ -1,5 +1,5 @@
 ---
-name: Translate
+name: translate
 description: Translate the document
 allowed-tools: Read, Grep, Glob, AskUserQuestion
 ---

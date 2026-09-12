@@ -1,5 +1,5 @@
 ---
-name: Balance spec
+name: balance-spec
 description: Provide a specification on implementation
 allowed-tools: Read, Grep, Glob
 ---

@@ -1,5 +1,5 @@
 ---
-name: Formalize
+name: formalize
 description: Analyze the code and identify areas for formalization.
 allowed-tools: Read, Grep, Glob
 ---

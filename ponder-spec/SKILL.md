@@ -1,5 +1,5 @@
 ---
-name: Ponder spec
+name: ponder-spec
 description: Ponder the specifications which a user pointed out
 allowed-tools: Read, Grep, Glob, AskUserQuestion 
 ---

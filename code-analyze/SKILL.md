@@ -1,5 +1,5 @@
 ---
-name: Code analyze
+name: code-analyze 
 description: Provide an overview of the codebase and analyze the reliability and features of each implementation
 allowed-tools: Read, Grep, Glob
 ---

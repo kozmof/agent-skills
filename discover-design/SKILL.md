@@ -1,5 +1,5 @@
 ---
-name: Discover Design
+name: discover-design
 description: Provide design dimensions from the codebase
 allowed-tools: Read, Grep, Glob
 ---

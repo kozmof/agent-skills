@@ -1,5 +1,5 @@
 ---
-name: Back Translate
+name: back-translate
 description: Back Translate the document
 allowed-tools: Read, Grep, Glob, AskUserQuestion
 ---
