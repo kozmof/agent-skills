@@ -24,9 +24,8 @@ Use the installed `kozane` command, or `pnpm exec kozane` for a project dependen
 ## Instructions
 
 1. Examine the current Kozane data.
-2. If it is empty or unrelated to the task, design a new structure: decide which namespace, partitions, and layers the task needs, then create them.
-3. Otherwise, decide how to model the current task with the existing structures.
-4. Use Kozane to work through the task.
+2. Start with a minimal form (adding cards only)
+3. If you find a data structure that fits the current task, consider adding other structures
 
 ## Card positioning
 
