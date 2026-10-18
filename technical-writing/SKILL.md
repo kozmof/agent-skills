@@ -30,24 +30,24 @@ If a plain word carries the meaning, use it instead of the term of art.
 
 When two clauses say the same thing, merge them into one.
 
-### 3. Avoid em-dashes, semicolons, and colons in prose
+### 3. Restructure sentences with em-dashes, semicolons, or colons
 
-In a sentence, an em-dash (—), a semicolon (;), and a colon (:) are all the same
-signal to reconstruct. The clause each introduces is usually additional or decorative
-rather than essential. Treat the three the same way. Fold the content into the sentence
-(commas, an "is"/"that" clause, or a second sentence), or cut it. Swapping one of these
-marks for another does not solve the problem, so restructure the sentence instead.
+Treat an em-dash (—), semicolon (;), or colon (:) in prose as a cue to rethink
+the whole sentence. Identify its main point and write it again around that point.
+Do not preserve the original clause structure by swapping punctuation, inserting
+"which" or "that", or splitting at the same mark. Keep supporting information
+only when the reader needs it, and give it a clear place in the rewritten prose.
 
 - Bad: "This spec records what the codebase implements today — the precise surface,
   not the roadmap."
 - Bad: "This spec records what the codebase implements today; it omits the roadmap."
 - Bad: "This spec records one thing: what the codebase implements today."
-- Good: "This spec records what the codebase implements today, not what is planned."
+- Good: "Use this spec to look up currently implemented features."
 
-As an exception, the `term — definition`, `term: definition`, and similar separators in
-glossaries, list items, tables, and titles are legitimate conventions, not decorative
-prose. Keep those. To find prose marks to fix, run `grep -nE "—|;|:" <file>`, then
-judge whether each one is a sentence (fix) or a list/table/title separator (keep).
+Conventional separators in glossaries, list items, tables, and titles are exceptions.
+Keep forms such as `term — definition` and `term: definition`, along with punctuation
+inside code and literal values. Find candidates with `rg -n '—|;|:' <file>`, then
+rewrite prose sentences and leave conventional or literal uses intact.
 
 ### 4. No emphasis markup
 
@@ -88,6 +88,47 @@ Match register to the document's job. Do not flatten everything to one voice.
   rule (3) and the no-emphasis rule (4) still apply here. Fix these marks in prose but
   keep definition-list separators, and do not reach for bold to mark up terms.
 
+## Organize around the reader's task
+
+Lead with the main workflow. Introduce optional structures and advanced features
+later, and say when the defaults are enough. Prefer a short hint such as
+"Use other structures only when you need them" over explaining every default.
+Do not imply that optional features are required setup.
+
+When a product offers both UI and CLI workflows, separate their instructions.
+For this house style, put UI before CLI unless the user or document's purpose
+calls for another order. Shared installation and startup can precede both.
+Keep browser gestures in the UI guide, command syntax in the CLI reference, and
+HTTP contracts in the API reference. Link to the relevant guide rather than
+repeating its instructions.
+
+## Refine without losing the contract
+
+When asked to shorten documentation, cut repeated explanations, design rationale,
+implementation narration, obvious behavior, and sample output that adds no useful
+information. Do not chase a word-count reduction or remove a command just to
+make the document shorter.
+
+- Guides should foreground actions, controls, and outcomes. Use compact tables
+  for shortcuts or comparable settings.
+- CLI and API references must retain commands or endpoints, required inputs,
+  options, defaults, response shapes, and meaningful errors. State shared rules
+  once, then document exceptions beside the affected operation.
+- Operations and security docs must preserve authentication requirements, access
+  boundaries, destructive effects, export exposure, data limits, and recovery
+  steps. Use tables for modes and limits where comparison helps.
+
+Keep the canonical explanation in one document and link to it from others.
+Resolve contradictions against the implementation, especially differences between
+live and static modes or default and opt-in behavior. Preserve useful heading
+anchors and update links when moving material.
+
+After restructuring, review the diff for lost requirements. Check local links
+and anchors, code fences, and whitespace. Run existing documentation coverage
+checks when they compare command or endpoint headings against source. Those
+checks establish coverage, not factual correctness. Report any validation that
+could not run. Avoid unrelated test suites for prose-only changes.
+
 ## Correctness is part of the writing
 
 Prose that misdescribes the code is a bug. When writing or reviewing docs:
@@ -109,4 +150,5 @@ Prose that misdescribes the code is a bug. When writing or reviewing docs:
 7. Register fits the genre (onboarding prose vs. terse reference material).
 8. Every factual or API claim checked against source.
 9. No emoji or badges.
-
+10. Main workflow comes first, optional features are clearly optional, and UI and CLI instructions are separate.
+11. Refinement preserves reference contracts, operational requirements, and working links.
