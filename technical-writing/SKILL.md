@@ -139,6 +139,12 @@ Prose that misdescribes the code is a bug. When writing or reviewing docs:
   cited in a status doc must match the test report they reference).
 - Remove claims for anything not implemented or not exposed.
 
+## Code comments complement code, not 1:1 explanations
+
+- Verify that the comment describes the purpose of the implementation so a reader can understand it without reading the code.
+- Verify that it is not a 1:1 code explanation. If it is, remove it.
+- Ensure it provides valuable insights that are not immediately obvious from the code alone.
+
 ## Review checklist
 
 1. Opener is a short, plain value statement with no jargon stack.
